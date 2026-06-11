@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="valorant-header">
+            <img src="images-maps/riot-games-logo.png" class="riot-logo-img" alt="Riot Games Logo">
+            <img src="images-maps/Valorant logo.png" class="val-logo-img" alt="Valorant Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="agents.html">Roster</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="arsenal.html">Arsenal</a></li>
+                <li><a href="leaderboard.html">Standings</a></li>
+                <li><a href="feedback.html" class="active">Comms HQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="form-section scroll-reveal">
+            <h2>COMMS FEEDBACK TERMINAL</h2>
+            <p>Report spatial configuration anomalies, bugs, or regional performance metrics directly back to headquarters database pipelines.</p>
+            
+            <form class="feedback-form" action="mailto:ezat_akarudim@unikl.edu.my" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="username">Riot ID Pointer:</label>
+                    <input type="text" id="username" name="username" placeholder="RiotPlayer#MYS" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="server-region">Server Grid Context:</label>
+                    <select id="server-region" name="region">
+                        <option value="AP">Asia Pacific Cluster (Singapore)</option>
+                        <option value="NA">North America Core</option>
+                        <option value="EU">Europe West Matrix</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Telemetry / Report Logs:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Document character design critiques or localized visual glitches..." required></textarea>
+                </div>
+
+                <button type="submit" class="cta-btn">DISPATCH LOGS</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer"><p>© 2026 Universiti Kuala Lumpur | Intro to Web Development Project Assignment. All visual content copyright Riot Games Inc.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
